@@ -3,7 +3,10 @@ CSS Variables
 */
 :root {
     --font-family: 'Montserrat', Sans-Serif;
-    --text-color: rgb(34, 34, 34);
+    --text-color: rgb(43, 43, 43);
+    --nav-font: 'Poppins', Sans-Serif;
+    --navfont-size: 1rem;
+    --navfont-color: rgb(112, 112, 112);
 }
 
 /*
@@ -18,22 +21,55 @@ CSS Universal Selector
     padding: 0;
 }
 
+body {
+    margin: 0 1rem 0 1rem;
+}
+
 .website-logo {
     font-family: var(--font-family);
     color: var(--text-color);
     font-weight: 800;
-    font-size: 2.5rem;
+    font-size: 2.3rem; /*clamp(1.8rem, 2.5vw, 2.8rem)*/
+}
+
+.logo-content,
+.left-side {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+}
+
+.left-side ul li {
+    display: inline;
+    font-family: var(--nav-font);
+    font-size: var(--navfont-size);
+    font-weight: 600;
+    padding: 1rem;
+}
+
+.right-side ul li {
+    display: inline;
+    font-family: var(--nav-font);
+    font-size: var(--navfont-size);
+    font-weight: 600;
+    padding: 1rem;
 }
 
 a {
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--navfont-color);
 }
 
 li {
     list-style: none;
 }
 
-.mobile-nav, .mobile-image {
+.mobile-nav,
+.mobile-image {
     display: none;
+}
+
+.client-logo>img {
+    width: 10rem;
 }

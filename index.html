@@ -14,6 +14,7 @@
     <link rel="manifest" href="./assets/favicon_io/site.webmanifest">
 
     <!--Using metadata for SEO-->
+    <meta title="Title" content="Responsive Website"> 
     <meta name="description" content="Free Responsive Web Landing Page Tutorials">
     <meta name="keywords" content="HTML, CSS, Responsive">
     <meta name="author" content="Milan Shrestha, freecodecamp">
@@ -29,6 +30,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
@@ -43,8 +45,9 @@
                     </div>
                     <div class="content">
                         <ul>
-                            <li><a href="#">Features</a></li>
-                            <li><a href="#">Company</a></li>
+                            <!--Tips to increase fontawesome icons is add {fasrf}-->
+                            <li><a href="#">Features<i class="fa-solid fa-angle-down fa-lg"></i></a></li>
+                            <li><a href="#">Company<i class="fa-solid fa-angle-down fa-lg"></i></a></li>
                             <li><a href="#">Careers</a></li>
                             <li><a href="#">About</a></li>
                         </ul>
@@ -53,8 +56,8 @@
 
                 <div class="right-side">
                     <ul>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Company</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Register</a></li>
                     </ul>
                 </div>
             </div>
@@ -68,7 +71,7 @@
                     <span><i class="fa-solid fa-bars"></i></span>
                 </div>
             </div>
-            
+
         </div>
 
     </header>
@@ -80,6 +83,12 @@
             <p class="sub-description">Get your team in sync, no matter your location. Streamline processes, create team
                 rituals, and watch productivity soar.</p>
             <button type="button" id="learn-more">Learn more</button>
+            <div class="client-logo">
+                <img src="./assets/client-audiophile.png" alt="client-audiophile">
+                <img src="./assets/client-databiz.png" alt="client-databiz">
+                <img src="./assets/client-maker.png" alt="client-maker">
+                <img src="./assets/client-meet.png" alt="client-meet">
+            </div>
         </section>
         <section class="side-image">
             <img src="./assets/image-hero-desktop.png" alt="webclient">
