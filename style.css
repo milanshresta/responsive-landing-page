@@ -2,12 +2,12 @@
 CSS Variables
 */
 :root {
-    --font-family: 'Montserrat', Sans-Serif;
-    --text-color: rgb(43, 43, 43);
-    --nav-font: 'Poppins', Sans-Serif;
-    --navfont-size: 1rem;
-    --navfont-color: rgb(112, 112, 112);
-    --head-line: 5rem;
+  --font-family: "Montserrat", Sans-Serif;
+  --text-color: rgb(43, 43, 43);
+  --nav-font: "Poppins", Sans-Serif;
+  --navfont-size: 1rem;
+  --navfont-color: rgb(112, 112, 112);
+  --head-line: 5rem;
 }
 
 /*
@@ -17,123 +17,123 @@ CSS Universal Selector
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    margin: 1rem 1rem 0 1rem;
+  margin: 1rem 1rem 0 1rem;
 }
 
 .website-logo {
-    font-family: var(--font-family);
-    color: var(--text-color);
-    font-weight: 800;
-    font-size: 2.3rem;
-    /*clamp(1.8rem, 2.5vw, 2.8rem)*/
+  font-family: var(--font-family);
+  color: var(--text-color);
+  font-weight: 800;
+  font-size: 2.3rem;
+  /*clamp(1.8rem, 2.5vw, 2.8rem)*/
 }
 
 .logo-content,
 .left-side {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
 }
 
 .left-side ul li {
-    display: inline;
-    font-family: var(--nav-font);
-    font-size: var(--navfont-size);
-    font-weight: 600;
-    padding: 1rem;
+  display: inline;
+  font-family: var(--nav-font);
+  font-size: var(--navfont-size);
+  font-weight: 600;
+  padding: 1rem;
 }
 
 .right-side ul li {
-    display: inline;
-    font-family: var(--nav-font);
-    font-size: var(--navfont-size);
-    font-weight: 600;
+  display: inline;
+  font-family: var(--nav-font);
+  font-size: var(--navfont-size);
+  font-weight: 600;
 }
 
 a {
-    text-decoration: none;
-    color: var(--navfont-color);
+  text-decoration: none;
+  color: var(--navfont-color);
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
-.right-side>ul li {
-    padding-left: 2rem;
+.right-side > ul li {
+  padding-left: 2rem;
 }
 
 .mobile-nav,
 .mobile-image {
-    display: none;
+  display: none;
 }
 
-.client-logo>img {
-    width: 10rem;
+.client-logo > img {
+  width: 10rem;
 }
 
 #register-btn {
-    border: 2px solid rgb(112, 112, 112);
-    padding: .5rem;
-    border-radius: 0.5rem;
+  border: 2px solid rgb(112, 112, 112);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
 }
 
 .landing-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: var(--font-family);
-    gap: 15rem;
-    margin-top: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-family);
+  gap: 15rem;
+  margin-top: 8rem;
 }
 
 h1 {
-    font-size: var(--head-line);
-    line-height: 4rem;
-    font-weight: 800;
-    padding-bottom: 2rem;
+  font-size: var(--head-line);
+  line-height: 4rem;
+  font-weight: 800;
+  padding-bottom: 2rem;
 }
 
 .sub-description {
-    font-size: 1.2rem;
-    width: 42rem;
-    padding-bottom: 2rem;
+  font-size: 1.2rem;
+  width: 42rem;
+  padding-bottom: 2rem;
 }
 .side-image {
-    text-align: center;
+  text-align: center;
 }
 
 img {
-    width: 25rem;
+  width: 25rem;
 }
 
 #learn-more {
-    cursor: pointer;
-    font-family: var(--font-family);
-    width: 8rem;
-    background-color: rgb(32, 32, 32);
-    border: none;
-    height: 3rem;
-    color: aliceblue;
-    font-weight: 600;
-    border-radius: .5rem;
+  cursor: pointer;
+  font-family: var(--font-family);
+  width: 8rem;
+  background-color: rgb(32, 32, 32);
+  border: none;
+  height: 3rem;
+  color: aliceblue;
+  font-weight: 600;
+  border-radius: 0.5rem;
 }
 
 .client-logo {
-    position: relative;
-    right: 2.9rem;
-    top: 3rem;
+  position: relative;
+  right: 2.9rem;
+  top: 3rem;
 }
 
 .footer-link {
-    font-family: var(--font-family);
-    text-align: center;
-    padding-top: 10rem;
+  font-family: var(--font-family);
+  text-align: center;
+  padding-top: 10rem;
 }
