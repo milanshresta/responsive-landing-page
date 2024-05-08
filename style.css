@@ -22,8 +22,14 @@ CSS Universal Selector
   padding: 0;
 }
 
-body {
-  margin: 1rem 1rem 0 1rem;
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navigation {
+  padding: 0.5rem 0rem 0rem 0rem;
 }
 
 .website-logo {
@@ -39,7 +45,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 5rem;
 }
 
 .left-side ul li {
@@ -70,6 +75,14 @@ li {
   padding-left: 2rem;
 }
 
+.content {
+  padding: 0.5rem 40rem 0rem 4rem;
+}
+
+.right-side {
+  padding: 1rem 0rem 0rem 0rem;
+}
+
 .mobile-nav,
 .mobile-image {
   display: none;
@@ -86,7 +99,7 @@ li {
 }
 
 .landing-page {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   font-family: var(--font-family);
@@ -136,4 +149,8 @@ img {
   font-family: var(--font-family);
   text-align: center;
   padding-top: 10rem;
+}
+
+.footer {
+  display: none;
 }
