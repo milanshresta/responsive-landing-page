@@ -2,9 +2,9 @@
 CSS Variables
 */
 :root {
-  --font-family: "Montserrat", Sans-Serif;
+  --logo-font: "Montserrat", Sans-Serif;
   --text-color: rgb(43, 43, 43);
-  --nav-font: "Poppins", Sans-Serif;
+  --nav-font: "Satoshi", Sans-Serif;
   --navfont-size: 1rem;
   --navfont-color: rgb(112, 112, 112);
   --head-line: 5rem;
@@ -33,7 +33,7 @@ CSS Universal Selector
 }
 
 .website-logo {
-  font-family: var(--font-family);
+  font-family: var(--logo-font);
   color: var(--text-color);
   font-weight: 800;
   font-size: 2.3rem;
@@ -51,15 +51,17 @@ CSS Universal Selector
   display: inline;
   font-family: var(--nav-font);
   font-size: var(--navfont-size);
-  font-weight: 600;
+  font-weight: 500;
   padding: 1rem;
+  font-feature-settings: "ss03" 3;
 }
 
 .right-side ul li {
   display: inline;
   font-family: var(--nav-font);
   font-size: var(--navfont-size);
-  font-weight: 600;
+  font-weight: 500;
+  font-feature-settings: "ss03" 3;
 }
 
 a {
