@@ -6,20 +6,8 @@ CSS Variables
   --text-color: rgb(43, 43, 43);
   --nav-font: "Satoshi", Sans-Serif;
   --navfont-size: 1rem;
-  --navfont-color: rgb(112, 112, 112);
+  --navfont-color: rgb(66, 66, 66);
   --head-line: 5rem;
-}
-
-/*
-CSS Universal Selector
-*/
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 .main {
@@ -28,8 +16,14 @@ CSS Universal Selector
   align-items: center;
 }
 
-.navigation {
-  padding: 0.5rem 0rem 0rem 0rem;
+.test-nav,
+.hero-landing,
+.footer-page {
+  width: 100%;
+}
+
+.desktop-nav {
+  display: flex;
 }
 
 .website-logo {
@@ -40,11 +34,10 @@ CSS Universal Selector
   /*clamp(1.8rem, 2.5vw, 2.8rem)*/
 }
 
-.logo-content,
 .left-side {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 
 .left-side ul li {

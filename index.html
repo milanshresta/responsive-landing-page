@@ -5,27 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Landing Page</title>
-
-    <!--favico for this website-->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./assets/favicon_io/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/favicon_io/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./assets/favicon_io/favicon-16x16.png"
-    />
-    <link rel="manifest" href="./assets/favicon_io/site.webmanifest" />
-
     <!--Using metadata for SEO-->
     <meta title="Title" content="Responsive Website" />
     <meta
@@ -38,10 +17,6 @@
     <!--Link CSS-->
     <link rel="stylesheet" href="./style.css" />
 
-    <!--Google Font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <!--fontawesome icon cdn-->
     <link
       rel="stylesheet"
@@ -53,92 +28,94 @@
   </head>
 
   <body class="main">
-    <header class="navigation">
+    <section class="test-nav">
       <!--Navigation Bar-->
-      <div class="nav">
-        <div class="logo-content">
-          <div class="left-side">
-            <div class="logo">
-              <span class="website-logo">snap</span>
-            </div>
-            <div class="content">
-              <ul>
-                <!--Tips to increase fontawesome icons is add {fasrf}-->
-                <li>
-                  <a href="#"
-                    >Features<i
-                      class="fa-solid fa-angle-down"
-                      style="padding: 0.25rem"
-                    ></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#"
-                    >Company<i
-                      class="fa-solid fa-angle-down"
-                      style="padding: 0.25rem"
-                    ></i
-                  ></a>
-                </li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">About</a></li>
-              </ul>
-            </div>
+      <div class="desktop-nav">
+        <div class="left-side">
+          <div class="logo">
+            <span class="website-logo">snap</span>
           </div>
-
-          <div class="right-side">
+          <div class="content">
             <ul>
-              <li><a href="#">Login</a></li>
-              <li><a href="#" id="register-btn">Register</a></li>
+              <!--Tips to increase fontawesome icons is add {fasrf}-->
+              <li>
+                <a href="#"
+                  >Features<i
+                    class="fa-solid fa-angle-down"
+                    style="padding: 0.25rem"
+                  ></i>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  >Company<i
+                    class="fa-solid fa-angle-down"
+                    style="padding: 0.25rem"
+                  ></i
+                ></a>
+              </li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">About</a></li>
             </ul>
           </div>
         </div>
 
-        <!--mobile navigation-->
-        <div class="mobile-nav">
-          <div class="logo">
-            <span class="website-logo">snap</span>
-          </div>
-          <div class="ham-menu">
-            <span><i class="fa-solid fa-bars"></i></span>
-          </div>
+        <div class="right-side">
+          <ul>
+            <li><a href="#">Login</a></li>
+            <li><a href="#" id="register-btn">Register</a></li>
+          </ul>
         </div>
       </div>
-    </header>
+
+      <!--mobile navigation-->
+      <div class="mobile-nav">
+        <div class="logo">
+          <span class="website-logo">snap</span>
+        </div>
+        <div class="ham-menu">
+          <span><i class="fa-solid fa-bars"></i></span>
+        </div>
+      </div>
+    </section>
 
     <!--Body section-->
-    <main class="landing-page">
-      <section class="headline-text">
-        <h1>Make<br />remote work</h1>
-        <p class="sub-description">
-          Get your team in sync, no matter your location. Streamline processes,
-          create team rituals, and watch productivity soar.
-        </p>
-        <button type="button" id="learn-more">Learn more</button>
-        <div class="client-logo">
-          <img src="./assets/client-audiophile.png" alt="client-audiophile" />
-          <img src="./assets/client-databiz.png" alt="client-databiz" />
-          <img src="./assets/client-maker.png" alt="client-maker" />
-          <img src="./assets/client-meet.png" alt="client-meet" />
-        </div>
-      </section>
-      <section class="side-image">
-        <img src="./assets/image-hero-desktop.png" alt="webclient" />
-      </section>
+    <section class="hero-landing">
+      <div class="landing-page">
+        <section class="headline-text">
+          <h1>Make<br />remote work</h1>
+          <p class="sub-description">
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <button type="button" id="learn-more">Learn more</button>
+          <div class="client-logo">
+            <img src="./assets/client-audiophile.png" alt="client-audiophile" />
+            <img src="./assets/client-databiz.png" alt="client-databiz" />
+            <img src="./assets/client-maker.png" alt="client-maker" />
+            <img src="./assets/client-meet.png" alt="client-meet" />
+          </div>
+        </section>
+        <section class="side-image">
+          <img src="./assets/image-hero-desktop.png" alt="webclient" />
+        </section>
 
-      <!--Image for mobile-->
-      <section class="mobile-image">
-        <img src="./assets/image-hero-mobile.png" alt="mobileimage" />
-      </section>
-    </main>
+        <!--Image for mobile-->
+        <section class="mobile-image">
+          <img src="./assets/image-hero-mobile.png" alt="mobileimage" />
+        </section>
+      </div>
+    </section>
 
     <!--Footer link section-->
-    <footer class="footer">
-      <div class="footer-link">
-        <span class="link-text">
-          Challenge by <b>Frontend Mentor</b>. Coded by <b>@milanshresta</b>.
-        </span>
+    <section class="footer-page">
+      <div class="footer">
+        <div class="footer-link">
+          <span class="link-text">
+            Challenge by <b>Frontend Mentor</b>. Coded by <b>@milanshresta</b>.
+          </span>
+        </div>
       </div>
-    </footer>
+    </section>
   </body>
 </html>
