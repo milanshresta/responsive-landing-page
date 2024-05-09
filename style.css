@@ -16,14 +16,14 @@ CSS Variables
   align-items: center;
 }
 
-.test-nav,
-.hero-landing,
-.footer-page {
-  width: 100%;
+.wt-d {
+  max-width: 100%;
 }
 
 .desktop-nav {
   display: flex;
+  justify-content: space-between;
+  gap: 30rem;
 }
 
 .website-logo {
@@ -38,6 +38,7 @@ CSS Variables
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
+  display: flex;
 }
 
 .left-side ul li {
@@ -64,18 +65,6 @@ a {
 
 li {
   list-style: none;
-}
-
-.right-side > ul li {
-  padding-left: 2rem;
-}
-
-.content {
-  padding: 0.5rem 40rem 0rem 4rem;
-}
-
-.right-side {
-  padding: 1rem 0rem 0rem 0rem;
 }
 
 .mobile-nav,
@@ -149,3 +138,25 @@ img {
 .footer {
   display: none;
 }
+
+/* Responsize media query */
+
+@media only screen and (max-width: 1270px) {
+  .desktop-nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 30rem;
+    background-color: brown;
+    max-width: 100%;
+    margin: 0rem 2rem 0rem 2rem;
+  }
+}
+
+/* @media only screen and (max-width: 1170px) {
+  .desktop-nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 22rem;
+    background-color: rgb(31, 101, 194);
+  }
+} */
